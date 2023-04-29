@@ -1,0 +1,25 @@
+# ========================================= #
+# Misc                                      #
+# ========================================= #
+git_stats
+
+
+# ========================================= #
+# OS Generated                              #
+# ========================================= #
+.DS_Store
+.DS_Store?
+.idea/
+/Assets/Plugins/Editor/JetBrains/Unity3DRider.*
+/Assets/Plugins/Editor/JetBrains.*
+
+
+/Library*
+/Logs*
+/obj*
+/Packages*
+/ProjectSettings*
+/Temp*
+/UserSettings*
+
+
