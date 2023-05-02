@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class StampController : MonoBehaviour
@@ -19,6 +20,7 @@ public class StampController : MonoBehaviour
 
     private Animator animator;
 
+    public GameObject stampBase;
     public GameObject yesImage;
 
     public GameObject restartButton;
@@ -92,11 +94,22 @@ public class StampController : MonoBehaviour
         {
             delayDuration = soundEffect.length;
         }
+
+        StartCoroutine(StartShakeCoroutines());
         Invoke("ActivateRestartButton", delayDuration);
     }
     
     private void ActivateRestartButton()
     {
         restartButton.SetActive(true);
+    }
+    
+    IEnumerator StartShakeCoroutines()
+    {
+        StartCoroutine(yesImage.GetComponent<ShakeController>().ShakeGameObject());
+        
+        yield return new WaitForSeconds(1f);
+        
+        StartCoroutine(stampBase.GetComponent<ShakeController>().ShakeGameObject());
     }
 }
