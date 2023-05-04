@@ -131,6 +131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 219363685530761747, guid: 0932bc9836ec94420850c4777ce877dd, type: 3}
+  particleEffectRed: {fileID: 219363685530761747, guid: ba71ce6dfae144accb1d75a33a102cef, type: 3}
+  particleEffectSmoke: {fileID: 4920178933643979509, guid: 4991c780647d44c0784752fd11d7f512, type: 3}
   soundEffects:
   - {fileID: 8300000, guid: 4c970bac347854b73a593c3a53d8dcab, type: 3}
   - {fileID: 8300000, guid: 544ab6c6d3e034b058f056257b8e17db, type: 3}
@@ -147,6 +149,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
+  stampBase: {fileID: 0}
   yesImage: {fileID: 0}
   restartButton: {fileID: 0}
 --- !u!82 &183832496012672284
